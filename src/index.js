@@ -1,3 +1,15 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
 
 window.addEventListener('DOMContentLoaded', async (event) => {
@@ -9,7 +21,7 @@ window.addEventListener('DOMContentLoaded', async (event) => {
         });
     })
 
-    el = document.querySelector(`#nav-menu li a[href="${window.location.hash}"]`)
+    let el = document.querySelector(`#nav-menu li a[href="${window.location.hash}"]`)
     if (el) {
         el.classList.add("active")
     } else {
