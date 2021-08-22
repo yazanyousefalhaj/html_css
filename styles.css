@@ -46,8 +46,10 @@ p {
   margin: auto;
 }
 
+/* Nav Bar */
 nav {
-  padding: 45px 110px;
+  padding: 3% 6%;
+  justify-content: space-between;
 }
 
 .nav-items-list {
@@ -73,9 +75,9 @@ nav {
   width: 50px;
   height: 50px;
   transform: scale(2.0);
-  margin-left: 50px;
 }
 
+/* background */
 .ellipses {
   position: absolute;
   left: 0px;
@@ -93,12 +95,22 @@ nav {
   backdrop-filter: blur(100px);
 }
 
-.hero {
-  /* padding: 0 0 16px 100px;
-  display: grid;
-  grid-template-columns: 1.1fr repeat(4, 1fr);
-  align-items: end;
-  column-gap: 3%; */
+/* main */
+.hero .view-more {
+  width: 175px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.hero .view-more h3 {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+}
+
+.hero .view-more.card {
+  padding: 13px 22px;
+  margin-top: 16px;
 }
 
 .item {
@@ -137,25 +149,13 @@ nav {
   border-radius: 10px;
 }
 
-.hero .view-more {
-  width: 175px;
-  text-align: center;
-  margin-bottom: 70px;
-}
-
-.hero .view-more h3 {
-  font-weight: 700;
-  font-size: 18px;
-  margin: 0;
-}
-
-.hero .view-more.card {
-  padding: 13px 22px;
-}
-
 .highlight {
   text-align: center;
   width: 320px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  width: 320px;
+  margin-left: 100px;
 }
 
 .highlight .card {
@@ -182,8 +182,17 @@ nav {
   padding-top: 20px;
 }
 
+.main-items-wrapper {
+  flex-grow: 5;
+  flex-basis: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+
 .header {
-  width: 100%;
   padding: 0px;
   margin-left: 50px;
 }
@@ -224,35 +233,23 @@ nav {
   padding: 100px 100px 128px 100px;
 }
 
-.highlight-wrapper {
-  display: flex;
-}
-
-.highlight-wrapper .highlight {
-  flex-grow: 1;
-  width: 320px;
-  margin-left: 100px;
-}
-
-.highlight-wrapper .d-flex {
-  flex-grow: 5;
-  flex-basis: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-end;
-}
-
-@media (max-width: 800px) {
-  :root {
-    font-size: 12px;
-  }
-
+@media (max-width: 1300px) {
   .lg-visible {
     display: none !important;
   }
+}
 
-  .hero {
-    grid-template-columns: 1.1fr repeat(3, 1fr);
+@media (max-width: 600px) {
+  .nav-items-list {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-items-wrapper {
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
   }
 }
