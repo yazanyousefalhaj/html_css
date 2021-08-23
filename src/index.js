@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', async (event) => {
     if (el) {
         el.classList.add("active")
     } else {
-        el = document.querySelector(`#nav-menu li a[href="#home"]`)
-        el.classList.add('active')
+        // el = document.querySelector(`#nav-menu li a[href="#home"]`)
+        // el.classList.add('active')
     }
 })
