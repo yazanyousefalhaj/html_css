@@ -1,79 +1,44 @@
-import './App.css';
-import { BlurBackground } from './components/BlurBackground';
-import { CoffeeItem } from './components/CoffeeItem';
-import { Header } from './components/Header';
-import { NavBar } from './components/navbar/NavBar'
-import { ViewMore } from './components/ViewMore';
+import "./App.css";
+import heroImages from "./data/heroImages.json";
+import galleryImages from "./data/galleryImages.json";
+import { BlurBackground } from "./components/BlurBackground";
+import { CoffeeItem } from "./components/CoffeeItem";
+import { CoffeeItemsList } from "./components/CoffeeItemsList";
+import { Header } from "./components/Header";
+import { NavBar } from "./components/navbar/NavBar";
+import { ViewMore } from "./components/ViewMore";
 
 
-function App() {
-
-  const heroImages = [
-    {
-      imageSrc: "assets/images/Iced Coffee.png", altText: "Iced Coffee", title: "Iced Coffee"
-    },
-    {
-      imageSrc: "assets/images/Caramel Frappe.png", altText: "Caramel Frappe", title: "Caramel Frappe"
-    },
-    {
-      imageSrc: "assets/images/MOcha Late 02.png", altText: "Mocha Late", title: "Mocha Late"
-    },
-  ]
-
-  const galleryImages = [
-    {
-      imageSrc: "assets/images/MOcha Late 02.png", altText: "Mocha Late", title: "Mocha Late"
-    },
-    {
-      imageSrc: "assets/images/MOcha Late 02.png", altText: "Mocha Late", title: "Mocha Late"
-    },
-    {
-      imageSrc: "assets/images/MOcha Late 02.png", altText: "Mocha Late", title: "Mocha Late"
-    },
-    {
-      imageSrc: "assets/images/MOcha Late 02.png", altText: "Mocha Late", title: "Mocha Late"
-    },
-    {
-      imageSrc: "assets/images/Double espresso.png", altText: "Double espresso", title: "Double espresso"
-    },
-    {
-      imageSrc: "assets/images/Double espresso.png", altText: "Double espresso", title: "Double espresso"
-    },
-    {
-      imageSrc: "assets/images/Double espresso.png", altText: "Double espresso", title: "Double espresso"
-    },
-    {
-      imageSrc: "assets/images/Double espresso.png", altText: "Double espresso", title: "Double espresso"
-    },
-  ]
+const App = () => {
 
   return (
     <div className="container">
-
       <BlurBackground>
-
         <NavBar />
-
 
         <section className="hero">
           <div className="d-flex">
-
-            <CoffeeItem imageSrc="assets/images/MOCHA LATE.png" altText="Mocha Late" title="Mocha Late" highlight={true} />
+            <CoffeeItem
+              imageSrc="assets/images/MOCHA LATE.png"
+              altText="Mocha Late"
+              title="Mocha Late"
+              description="Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species."
+              highlight={true}
+            />
 
             <div className="main-items-wrapper">
               <Header />
 
-              {heroImages.map(imageAttrs => (<CoffeeItem {...imageAttrs} />))}
+              <CoffeeItemsList list={heroImages} />
 
               <ViewMore />
-
             </div>
           </div>
         </section>
 
         <div className="gradient-bg">
           <section className="gallery">
-            {galleryImages.map(imageAttrs => (<CoffeeItem {...imageAttrs} />))}
+            <CoffeeItemsList list={galleryImages} />
           </section>
         </div>
       </BlurBackground>
