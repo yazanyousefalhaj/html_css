@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Header = () => {
+export const Header: React.FC = () => {
   return (
     <div className="header">
       <strong className="sub-title">Be Active</strong>

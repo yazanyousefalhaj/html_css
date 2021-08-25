@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ViewMore = () => {
+export const ViewMore: React.FC = () => {
   return (
     <div className='view-more card'>
       <img src='assets/images/image 2.png' alt='View more' />

@@ -11,13 +11,12 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-
 window.addEventListener('DOMContentLoaded', async (event) => {
     const navLinks = document.querySelectorAll("#nav-menu li a");
     navLinks.forEach(e => {
-        e.addEventListener("click", e => {
-            navLinks.forEach(e => e.classList.remove("active"))
-            e.target.classList.toggle("active")
+        e.addEventListener("click", (e: Event) => {
+            navLinks.forEach(e => e.classList.remove("active"));
+            (e.target as Element).classList.toggle("active");
         });
     })
 
@@ -26,6 +25,6 @@ window.addEventListener('DOMContentLoaded', async (event) => {
         el.classList.add("active")
     } else {
         el = document.querySelector(`#nav-menu li a[href="#home"]`)
-        el.classList.add('active')
+        el?.classList?.add('active')
     }
 })

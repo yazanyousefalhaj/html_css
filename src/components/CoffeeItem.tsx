@@ -1,6 +1,14 @@
 import React from 'react'
 
-export const CoffeeItem = ({ imageSrc, altText, title, description, highlight = false }) => {
+export interface CoffeeItemProps {
+  imageSrc: string
+  altText: string
+  title: string
+  description: string
+  highlight?: boolean
+}
+
+export const CoffeeItem: React.FC<CoffeeItemProps> = ({ imageSrc, altText, title, description, highlight = false }) => {
   const highlightClass = highlight ? 'highlight lg-visible' : ''
 
   return (

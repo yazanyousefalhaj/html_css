@@ -3,7 +3,7 @@ import { Logo } from "./Logo";
 import { NavLink } from "./NavLink";
 import { ShoppingCart } from "./ShoppingCart";
 
-export const NavBar = () => {
+export const NavBar: React.FC = () => {
   const navItems = {
     "#home": "Home",
     "#about": "About Us",

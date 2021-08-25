@@ -1,3 +1,4 @@
+import React from 'react'
 import "./App.css";
 import heroImages from "./data/heroImages.json";
 import galleryImages from "./data/galleryImages.json";
@@ -9,7 +10,7 @@ import { NavBar } from "./components/navbar/NavBar";
 import { ViewMore } from "./components/ViewMore";
 
 
-const App = () => {
+const App: React.FC = () => {
 
   return (
     <div className="container">
