@@ -17,6 +17,7 @@ body {
 
 .container {
   position: relative;
+  min-height: 1297px;
 }
 
 a {
@@ -237,10 +238,10 @@ nav {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   align-items: end;
-  column-gap: 96px;
-  row-gap: 96px;
+  column-gap: 6rem;
+  row-gap: 6rem;
   padding: 100px 100px 128px 100px;
 }
 
@@ -249,7 +250,34 @@ nav {
   text-decoration: underline;
 }
 
-@media (max-width: 1300px) {
+.nav-bar-link {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-bar-link:hover {
+  color: #EB5757;
+}
+
+.nav-bar-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #eb5757;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-bar-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media (max-width: 1500px) {
   .lg-visible {
     display: none !important;
   }

@@ -1,15 +1,15 @@
 import React from "react";
 import { Logo } from "./Logo";
-import { NavLink } from "./NavLink";
+import { NavLink } from "react-router-dom";
 import { ShoppingCart } from "./ShoppingCart";
 
 export const NavBar: React.FC = () => {
   const navItems = {
-    "#home": "Home",
-    "#about": "About Us",
-    "#suppliers": "Our Suppliers",
-    "#products": "Products",
-    "#contact": "Contact Us",
+    "": "Home",
+    "about": "About Us",
+    "suppliers": "Our Suppliers",
+    "products": "Products",
+    "contact": "Contact Us",
   };
 
   return (
@@ -20,7 +20,7 @@ export const NavBar: React.FC = () => {
         <ul id="nav-menu" className="d-flex nav-items-list">
           {Object.entries(navItems).map(([k, v]) => (
             <li key={k}>
-              <NavLink href={k} text={v} />
+              <NavLink exact className="nav-bar-link" to={k}>{v}</NavLink>
             </li>
           ))}
         </ul>

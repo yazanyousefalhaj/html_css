@@ -1,0 +1,79 @@
+{
+	"galleryImages": [
+		{
+			"imageSrc": "assets/images/MOcha Late 02.png",
+			"altText": "Mocha Late",
+			"title": "Mocha Late",
+			"description": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species."
+		},
+		{
+			"imageSrc": "assets/images/MOcha Late 02.png",
+			"altText": "Mocha Late",
+			"title": "Mocha Late",
+			"description": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species."
+		},
+		{
+			"imageSrc": "assets/images/MOcha Late 02.png",
+			"altText": "Mocha Late",
+			"title": "Mocha Late",
+			"description": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species."
+		},
+		{
+			"imageSrc": "assets/images/MOcha Late 02.png",
+			"altText": "Mocha Late",
+			"title": "Mocha Late",
+			"description": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species."
+		},
+		{
+			"imageSrc": "assets/images/Double espresso.png",
+			"altText": "Double espresso",
+			"title": "Double espresso",
+			"description": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species."
+		},
+		{
+			"imageSrc": "assets/images/Double espresso.png",
+			"altText": "Double espresso",
+			"title": "Double espresso",
+			"description": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species."
+		},
+		{
+			"imageSrc": "assets/images/Double espresso.png",
+			"altText": "Double espresso",
+			"title": "Double espresso",
+			"description": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species."
+		},
+		{
+			"imageSrc": "assets/images/Double espresso.png",
+			"altText": "Double espresso",
+			"title": "Double espresso",
+			"description": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species."
+		}
+	],
+	"heroImages": [
+		{
+			"imageSrc": "assets/images/Iced Coffee.png",
+			"altText": "Iced Coffee",
+			"title": "Iced Coffee",
+			"description": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species."
+		},
+		{
+			"imageSrc": "assets/images/Caramel Frappe.png",
+			"altText": "Caramel Frappe",
+			"title": "Caramel Frappe",
+			"description": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species."
+		},
+		{
+			"imageSrc": "assets/images/MOcha Late 02.png",
+			"altText": "Mocha Late",
+			"title": "Mocha Late",
+			"description": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species."
+		}
+	],
+	"highlightImage": {
+        "imageSrc": "assets/images/MOCHA LATE.png",
+        "altText": "Mocha Late",
+        "title": "Mocha Late",
+        "description": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.",
+        "highlight": true
+	}
+}

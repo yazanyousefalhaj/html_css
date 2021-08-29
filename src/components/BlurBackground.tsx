@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface Props {
-  children: React.ReactElement<any>[]
+  children: React.ReactElement<any>[] | React.ReactElement<any>
 }
 
 export const BlurBackground: React.FC<Props> = ({ children }) => {
