@@ -1,4 +1,5 @@
 import React from 'react'
+import './CoffeeItem.css'
 
 export interface CoffeeItemProps {
   imageSrc: string

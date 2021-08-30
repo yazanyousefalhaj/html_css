@@ -2,7 +2,7 @@ import React from 'react'
 import { HomePage } from 'pages/home';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import { BlurBackground } from 'components/BlurBackground';
+import { BlurBackground } from 'components/blur_background/BlurBackground';
 import { NavBar } from 'components/navbar/NavBar';
 import { AboutPage } from 'pages/about';
 import { SuppliersPage } from 'pages/suppliers';

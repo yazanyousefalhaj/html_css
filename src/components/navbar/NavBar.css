@@ -1,0 +1,61 @@
+nav {
+  padding: 3% 6%;
+  justify-content: space-between;
+}
+
+.nav-items-list {
+  list-style: none;
+  justify-self: center;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-items-list li {
+  padding-left: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  transform: scale(2.0);
+}
+
+.active {
+  color: #EB5757;
+  text-decoration: underline;
+}
+
+.nav-bar-link {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-bar-link:hover {
+  color: #EB5757;
+}
+
+.nav-bar-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #eb5757;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-bar-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

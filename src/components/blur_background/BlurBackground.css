@@ -1,0 +1,16 @@
+.ellipses {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  z-index: -1;
+}
+
+.gradient-bg {
+  background: linear-gradient(180deg, rgba(228, 239, 233, 0) 0%, #ECF8F1 6.25%);
+}
+
+.blur-bg {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(100px);
+}

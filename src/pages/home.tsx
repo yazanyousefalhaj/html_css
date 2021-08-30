@@ -1,9 +1,9 @@
 import React from "react"
 import { heroImages, galleryImages, highlightImage } from "data/constants.json";
-import { CoffeeItem } from "components/CoffeeItem";
+import { CoffeeItem } from "components/coffee_item/CoffeeItem";
 import { CoffeeItemsList } from "components/CoffeeItemsList";
-import { Header } from "components/Header";
-import { ViewMore } from "components/ViewMore";
+import { Header } from "components/header/Header";
+import { ViewMore } from "components/view_more/ViewMore";
 
 
 export const HomePage: React.FC = () => {

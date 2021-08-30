@@ -1,4 +1,5 @@
 import React from 'react'
+import "./BlurBackground.css"
 
 interface Props {
   children: React.ReactElement<any>[] | React.ReactElement<any>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { CoffeeItem, CoffeeItemProps } from './CoffeeItem'
+import { CoffeeItem, CoffeeItemProps } from './coffee_item/CoffeeItem'
 
 interface Props {
   list: CoffeeItemProps[]

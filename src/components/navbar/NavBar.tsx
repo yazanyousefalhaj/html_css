@@ -2,6 +2,7 @@ import React from "react";
 import { Logo } from "./Logo";
 import { NavLink } from "react-router-dom";
 import { ShoppingCart } from "./ShoppingCart";
+import "./NavBar.css"
 
 export const NavBar: React.FC = () => {
   const navItems = {
