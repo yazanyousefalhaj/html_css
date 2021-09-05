@@ -8,6 +8,7 @@ import { AboutPage } from 'pages/about';
 import { SuppliersPage } from 'pages/suppliers';
 import { ProductsPage } from 'pages/products';
 import { ContactPage } from 'pages/contact';
+import { CreateItemPage } from 'pages/create-item';
 
 
 const App: React.FC = () => {
@@ -24,6 +25,7 @@ const App: React.FC = () => {
             <Route path="/suppliers" exact component={SuppliersPage} />
             <Route path="/products" exact component={ProductsPage} />
             <Route path="/contact" exact component={ContactPage} />
+            <Route path="/create-item" exact component={CreateItemPage} />
             <Route path="/">
               <h1>Nothing</h1>
             </Route>
