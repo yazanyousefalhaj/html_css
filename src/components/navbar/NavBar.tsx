@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Logo } from "./Logo";
 import { NavLink } from "react-router-dom";
 import { ShoppingCart } from "./ShoppingCart";
@@ -13,15 +13,17 @@ export const NavBar: React.FC = () => {
     "contact": "Contact Us",
   };
 
+  const [displayNavMenuClass, setDisplayNavMenuClass] = useState("")
+
   return (
     <div>
       <nav className="d-flex align-items-center w-100">
         <Logo />
 
-        <ul id="nav-menu" className="d-flex nav-items-list">
+        <ul id="nav-menu" className={`${displayNavMenuClass} d-flex nav-items-list`}>
           {Object.entries(navItems).map(([k, v]) => (
             <li key={k}>
-              <NavLink exact className="nav-bar-link" to={k}>{v}</NavLink>
+              <NavLink exact className="nav-bar-link" to={k} onClick={() => setDisplayNavMenuClass("")}>{v}</NavLink>
             </li>
           ))}
         </ul>
@@ -33,6 +35,13 @@ export const NavBar: React.FC = () => {
           alt="Profile"
           className="profile-icon"
         />
+
+        <div className="burger-icon" onClick={() => setDisplayNavMenuClass(displayNavMenuClass? "": "nav-items-list-display")}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
       </nav>
     </div>
   );

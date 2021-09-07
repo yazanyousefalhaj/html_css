@@ -1,5 +1,6 @@
 import React, { useState, FormEventHandler, ChangeEventHandler } from "react"
 import { useHistory } from "react-router-dom"
+import "./create-item.css"
 
 
 export const CreateItemPage: React.FC = () => {
@@ -8,7 +9,8 @@ export const CreateItemPage: React.FC = () => {
     const onSubmit: FormEventHandler = (e) => {
         e.preventDefault()
         const oldList = JSON.parse(localStorage.getItem("images") as string)
-        const newList = [...oldList, formState]
+        const newListItem = {...formState, id: oldList.reduce((l: number, r: any) => Math.max(l, r.id), -Infinity) + 1}
+        const newList = [...oldList, newListItem]
         localStorage.setItem("images", JSON.stringify(newList))
         history.replace("/")
     }
@@ -21,7 +23,7 @@ export const CreateItemPage: React.FC = () => {
     }
 
     return (
-        <div>
+        <div className="form-container">
             <h1>Add new items</h1>
             <form onSubmit={onSubmit}>
                 <div>
@@ -31,17 +33,17 @@ export const CreateItemPage: React.FC = () => {
 
                 <div>
                     <label htmlFor="altText">Alt Text: </label>
-                    <input type="text" name="altText" id="altText"  onChange={onChange}/>
+                    <input type="text" name="altText" id="altText"  onChange={onChange} />
                 </div>
 
                 <div>
                     <label htmlFor="title">Title: </label>
-                    <input type="text" name="title" id="title" onChange={onChange}/>
+                    <input type="text" name="title" id="title" onChange={onChange} />
                 </div>
 
                 <div>
                     <label htmlFor="description">Description: </label>
-                    <input type="text" name="description" id="description" onChange={onChange}/>
+                    <input type="text" name="description" id="description" onChange={onChange} />
                 </div>
 
                 <input type="submit" value="Submit" />

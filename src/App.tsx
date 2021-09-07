@@ -1,5 +1,5 @@
 import React from 'react'
-import { HomePage } from 'pages/home';
+import { HomePage } from 'pages/home/home';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import { BlurBackground } from 'components/blur_background/BlurBackground';
@@ -8,7 +8,7 @@ import { AboutPage } from 'pages/about';
 import { SuppliersPage } from 'pages/suppliers';
 import { ProductsPage } from 'pages/products';
 import { ContactPage } from 'pages/contact';
-import { CreateItemPage } from 'pages/create-item';
+import { CreateItemPage } from 'pages/create-item/create-item';
 
 
 const App: React.FC = () => {
