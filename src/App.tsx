@@ -1,5 +1,5 @@
 import React from 'react'
-import { HomePage } from 'pages/home';
+import { HomePage } from 'pages/home/home';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import { BlurBackground } from 'components/blur_background/BlurBackground';
@@ -8,6 +8,7 @@ import { AboutPage } from 'pages/about';
 import { SuppliersPage } from 'pages/suppliers';
 import { ProductsPage } from 'pages/products';
 import { ContactPage } from 'pages/contact';
+import { CreateItemPage } from 'pages/create-item/create-item';
 
 
 const App: React.FC = () => {
@@ -24,6 +25,7 @@ const App: React.FC = () => {
             <Route path="/suppliers" exact component={SuppliersPage} />
             <Route path="/products" exact component={ProductsPage} />
             <Route path="/contact" exact component={ContactPage} />
+            <Route path="/create-item" exact component={CreateItemPage} />
             <Route path="/">
               <h1>Nothing</h1>
             </Route>

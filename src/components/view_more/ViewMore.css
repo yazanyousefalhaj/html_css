@@ -2,6 +2,7 @@
   width: 175px;
   text-align: center;
   margin-bottom: 70px;
+  order: 3;
 }
 
 .hero .view-more h3 {
