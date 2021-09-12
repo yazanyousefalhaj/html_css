@@ -12,9 +12,10 @@ export const CoffeeItemsList: React.FC<Props> = ({ list, onSelected }) => {
   return (
     <Slider initList={list}>
       {(list) => {
-        return list.map((imageAttrs, i) => (
-          <CoffeeItem key={`${imageAttrs.title}-${i}`} {...imageAttrs} highlight={i === 0} onSelected={onSelected} />
-        ))
+        console.log(list);
+        return list.map((imageAttrs, i) => {
+          return (<CoffeeItem key={`${imageAttrs.title}-${i}-${i===0}`} {...imageAttrs} highlight={i === 0} onSelected={onSelected} />)
+        })
       }
       }
     </Slider>

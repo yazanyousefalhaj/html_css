@@ -3,24 +3,18 @@ import { ViewMore } from "components/view_more/ViewMore";
 
 
 export interface Props {
-    children: (list: any[]) => React.ReactElement<any>[]
-    initList: any[]
+    children: (list: any[]) => React.ReactElement<any>[];
+    initList: any[];
 }
 
 
 export const Slider: React.FC<Props> = ({ children, initList }) => {
-    const [list, setList] = useState(initList)
+    const [index, setIndex] = useState(0);
 
-    const onViewMoreClicked = () => {
-        const newList = [...list]
-        newList.push(newList.shift())
-        setList(newList)
-    }
+    const onViewMoreClicked = () => { setIndex(index + 1) };
 
-    useEffect(() => {
-        const newList = list.filter((e) => initList.includes(e))
-        setList(newList)
-    }, [initList])
+    const mod = index % initList.length;
+    const list = [...initList.slice(mod), ...initList.slice(0, mod)];
 
     return (
         <>

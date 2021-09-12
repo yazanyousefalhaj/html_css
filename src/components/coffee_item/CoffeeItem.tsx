@@ -12,7 +12,7 @@ export interface CoffeeItemProps {
 }
 
 export const CoffeeItem: React.FC<CoffeeItemProps> = ({ id, imageSrc, altText, title, description, onSelected, highlight = false }) => {
-  const highlightClass = highlight ? 'highlight lg-visible' : ''
+  const highlightClass = highlight ? 'highlight lg-visible' : '';
 
   return (
     <div className={`item ${highlightClass}`}>

@@ -21,7 +21,6 @@ export const HomePage: React.FC = () => {
     localStorage.setItem("images", JSON.stringify(newImages))
     setImages(newImages)
     setSelectedItems([])
-    console.log("why?")
   }
 
   return (

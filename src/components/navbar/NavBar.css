@@ -86,7 +86,7 @@ nav {
     position: fixed;
     left: 0;
     top: 0;
-    padding: 2rem;
+    padding: 0;
     margin: 0;
     z-index: 15;
     display: none;
@@ -99,7 +99,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
+    background-color: whitesmoke;
   }
 
   .nav-items-list-display {
